@@ -7,6 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
   let flags = 0
   let squares = []
   let isGameOver = false
+  let restart = document.querySelector('#restart');
+  restart.addEventListener('click', test);
+
+
 
   //create Board
   function createBoard() {
@@ -189,3 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 })
+
+function test() {
+  window.location.reload();
+}
